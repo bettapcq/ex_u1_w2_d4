@@ -159,16 +159,22 @@ console.log('ESERCIZIO 7:', reverseString('ciao'));
 const upperFirst = function (frase) {
   let splittedFrase = frase.split(' ');
   console.log(splittedFrase);
+  let word;
+  let lowerRest;
+  let upperChar;
   for (let i = 0; i < splittedFrase.length; i++) {
-    let word = splittedFrase[i];
+    word = splittedFrase[i];
+    lowerRest = word.slice(1);
+    upperChar = word[0].toUpperCase() + lowerRest;
   }
-  let lowerRest = word.slice(1);
-  let upperChar = word[0].toUpperCase() + lowerRest;
   console.log(upperChar);
-  return upperChar.join();
+  return upperChar
 };
 
-upperFirst('ciao sono elisabetta e vengo da torino');
+console.log(
+  'ESERCIZIO 8:',
+  upperFirst('ciao sono elisabetta e vengo da torino')
+);
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
