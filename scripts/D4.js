@@ -162,13 +162,14 @@ const upperFirst = function (frase) {
   let word;
   let lowerRest;
   let upperChar;
+  let finalFrase = [];
   for (let i = 0; i < splittedFrase.length; i++) {
     word = splittedFrase[i];
     lowerRest = word.slice(1);
     upperChar = word[0].toUpperCase() + lowerRest;
+    finalFrase.push(upperChar);
   }
-  console.log(upperChar);
-  return upperChar
+  return finalFrase.join(' ');
 };
 
 console.log(
