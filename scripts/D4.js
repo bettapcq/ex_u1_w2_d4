@@ -83,12 +83,10 @@ console.log('ESERCIZIIO 4: ', boundary(45));
 const epify = function (str) {
   if (typeof str === 'string') {
     let splitStr = str.split(' ');
-    //console.log(splitStr);
     let strBegin = splitStr[0];
-    //console.log(strBegin);
     if (strBegin === 'EPICODE') {
       let joinAgain = splitStr.join();
-      return str;
+      return joinAgain;
     } else {
       let addStr = 'EPICODE';
       return addStr.concat(' ', str);
@@ -184,8 +182,28 @@ console.log(
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// COMPLETATO DOPO :
+
+const cutString = function (str) {
+  const noFirstNoLast = str.slice(1, -1);
+};
+
+console.log('ESERCIZIO 9:', cutString('elisabetta'));
+
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
 // SCRIVI QUI LA TUA RISPOSTA
+
+//COMPLETATO DOPO:
+
+const giveMeRandom = function(numeroDiVolte) {
+    const array = []
+    for (let 1=0; i<numeroDiVolte; i++){
+        array.push(Math.floor(Math.random() * 10))
+  }
+  return array
+}
+
+console.log(giveMeRandom(5))
