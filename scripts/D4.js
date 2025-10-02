@@ -198,12 +198,12 @@ console.log('ESERCIZIO 9:', cutString('elisabetta'));
 
 //COMPLETATO DOPO:
 
-const giveMeRandom = function(numeroDiVolte) {
-    const array = []
-    for (let 1=0; i<numeroDiVolte; i++){
-        array.push(Math.floor(Math.random() * 10))
+const giveMeRandom = function (numeroDiVolte) {
+  const array = [];
+  for (let i = 0; 1 < numeroDiVolte; i++) {
+    array.push(Math.floor(Math.random() * 10));
   }
-  return array
-}
+  return arr;
+};
 
-console.log(giveMeRandom(5))
+console.log(giveMeRandom(5));
